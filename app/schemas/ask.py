@@ -13,3 +13,5 @@ class AskRequest(BaseModel):
 
 class AskResponse(BaseModel):
     answer: str
+    tokens_used: int
+    cost_usd: float
