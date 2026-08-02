@@ -26,11 +26,11 @@ A FastAPI-based AI service that exposes a reliable `POST /ask` endpoint using th
 
 ### Streamlit UI
 
-(image)
+![Streamlit UI](Images/streamlit-response.png)
 
 ### Swagger API
 
-(image)
+![Swagger API](Images/swagger-response.png)
 
 ## API Response
 
