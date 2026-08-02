@@ -2,18 +2,35 @@
 
 A FastAPI-based AI service that exposes a reliable `POST /ask` endpoint using the OpenAI Responses API. The project includes token-usage tracking, estimated cost per request, a Streamlit demo interface, and public deployment support.
 
+## 🚀 Live Demo
+
+- **🌐 Streamlit UI:** https://ai-endpoint-template.streamlit.app/
+- **📖 Swagger API Docs:** https://ai-endpoint-template.onrender.com/docs
+- **❤️ Health Check:** https://ai-endpoint-template.onrender.com/health
+
 ## Features
 
-* FastAPI backend
-* `GET /health` endpoint
-* `POST /ask` endpoint
-* OpenAI Responses API integration
-* Pydantic request and response validation
-* Token-usage reporting
-* Estimated API cost per request
-* Streamlit user interface
-* Environment-based configuration
-* Public HTTPS deployment
+- FastAPI REST API
+- GET /health endpoint
+- POST /ask endpoint
+- OpenAI Responses API integration
+- Pydantic request/response validation
+- Token usage tracking
+- Cost estimation per request
+- Streamlit frontend
+- Environment-based configuration
+- Public cloud deployment
+- Smoke tests for deployed endpoints
+
+## Screenshots
+
+### Streamlit UI
+
+(image)
+
+### Swagger API
+
+(image)
 
 ## API Response
 
@@ -21,9 +38,9 @@ The `/ask` endpoint returns structured JSON:
 
 ```json
 {
-  "answer": "An AI-generated response.",
-  "tokens_used": 120,
-  "cost_usd": 0.0000513
+  "answer": "An AI endpoint is a specific online address or API where applications can access artificial intelligence services, such as machine learning models or natural language processing. It allows developers to send data to the AI service and receive processed results in return. This facilitates integration of AI capabilities into various applications and systems.",
+  "tokens_used": 104,
+  "cost_usd": 0.0000417
 }
 ```
 
@@ -126,7 +143,15 @@ The UI will normally open at:
 http://localhost:8501
 ```
 
-## Public API
+## Smoke Test
+
+Run:
+
+```bash
+python smoke_test.py
+```
+
+## Deployment
 
 FastAPI documentation:
 
@@ -143,7 +168,7 @@ https://ai-endpoint-template.onrender.com/health
 Streamlit application:
 
 ```text
-Add the deployed Streamlit URL here
+https://ai-endpoint-template.streamlit.app/
 ```
 
 ## Public API Test
@@ -186,6 +211,16 @@ Structured JSON response
 * HTTPX
 * Uvicorn
 * Render
+
+## Future Improvements
+
+- Streaming responses
+- Conversation history
+- Structured Outputs
+- Authentication
+- Docker support
+- CI/CD
+- Unit tests
 
 ## License
 
