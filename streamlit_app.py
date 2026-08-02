@@ -1,8 +1,11 @@
 import httpx
 import streamlit as st
+import os
 
-
-API_URL = "http://127.0.0.1:8000/ask"
+API_URL = os.getenv(
+    "API_URL",
+    "http://127.0.0.1:8000/ask",
+)
 
 st.set_page_config(
     page_title="AI Endpoint Demo",
